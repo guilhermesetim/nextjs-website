@@ -1,4 +1,5 @@
 function GlobalStyle(){
+    return(
     <style global jsx>{`
     * {
     margin: 0;
@@ -9,11 +10,21 @@ function GlobalStyle(){
 	text-decoration: none;
     }
 
+    body {background-color: gray;}
+
     a {color: inherit;}
     `}</style>
+    )
 }
 
 export default function MyApp({ Component, pageProps }) {
+    
+    return( 
+    <>
+
     <GlobalStyle />
-    return <Component {...pageProps} />
+    <Component {...pageProps} />
+
+    </>
+    )
   }
