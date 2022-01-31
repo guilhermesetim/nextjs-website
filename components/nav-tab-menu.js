@@ -6,6 +6,8 @@ import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 
+import Services from '../components/services'
+
 const blue = {
   50: '#F0F7FF',
   100: '#C2E0FF',
@@ -84,7 +86,7 @@ export default function UnstyledTabsCustomized() {
         <Tab>Depoimentos</Tab>
       </TabsList>
       <TabPanel value={0}>um</TabPanel>
-      <TabPanel value={1}>dois</TabPanel>
+      <TabPanel value={1}><Services/></TabPanel>
       <TabPanel value={2}>tres</TabPanel>
       <TabPanel value={3}>quatro</TabPanel>
     </TabsUnstyled>

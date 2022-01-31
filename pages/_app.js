@@ -10,7 +10,9 @@ function GlobalStyle(){
 	text-decoration: none;
     }
 
-    body {background-color: gray;}
+    body {
+        
+    }
 
     a {color: inherit;}
     `}</style>

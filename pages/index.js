@@ -1,4 +1,7 @@
 import UnstyledTabsCustomized from '../components/nav-tab-menu';
+import Image from 'next/image'
+
+
 
 
 function Header(){
@@ -7,12 +10,16 @@ function Header(){
    return(
     <>
         <header>
-            <h1>Barbearia Fernandes</h1>
+        <img src="logo.jpg"/>
+            
         </header>
         <style jsx>{`
         header{
-            height: 200px;
+            display: flex;
+            height: 15vh;
+            justify-content: center;
         }
+
 
         `}</style>
     </>
