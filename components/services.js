@@ -1,7 +1,3 @@
-import { style } from "@mui/system"
-
-
-
 export default function Services(){
     const price={cut: 35, barber: 30, cutbarber: 60}
     return (
@@ -40,6 +36,7 @@ export default function Services(){
                 align-content: center;
                 border: 8px solid black;
                 border-radius: 30px;
+                background-color: white;
             }
 
             h3 {

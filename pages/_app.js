@@ -9,11 +9,7 @@ function GlobalStyle(){
 	font-size: 100%;
 	text-decoration: none;
     }
-
-    body {
-        
-    }
-
+    
     a {color: inherit;}
     `}</style>
     )
