@@ -1,10 +1,12 @@
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 export default function Footer(){
     return (
         <>
             <section>
                 <div>
                     <h3>Siga no instagram</h3>
-                    <p></p>
+                    <a href="https://www.instagram.com/barbeariafernandes58/"><InstagramIcon/></a>
                 </div>
 
 
@@ -23,8 +25,10 @@ export default function Footer(){
             </section>
 
             <style jsx>{`
-                div {
-                    
+                section {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around; 
                 }
             `}</style>
         </>

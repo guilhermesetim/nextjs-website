@@ -1,12 +1,12 @@
-export default function Header(){
+export default function Start(){
 
     return(
     <>
-        <header>
+        <section>
             
-        </header>
+        </section>
         <style jsx>{`
-            header {
+            section {
                 height: 100vh;
                 background: url('/img/home/header2.jpg') center top;
                 background-size: cover;

@@ -1,7 +1,7 @@
 export default function AppBarber(){
     return (
         <>
-        <h3>Agende pelo nosso app</h3>
+        <h2>Agende pelo nosso app</h2>
         <div className="container">
         
             <div className="app">
@@ -11,6 +11,9 @@ export default function AppBarber(){
                 
             </div>
 
+            
+            
+            
             <div className="cell-phone">
                 <a href="#"><img className="link-app" src="img/home/google-play.png"/></a>
                 <a href="#"><img className="link-app" src="img/home/app-store.png"/></a>
@@ -56,19 +59,21 @@ export default function AppBarber(){
         </div>
         
         <style jsx>{`
+
+            h2 {
+                text-align: center;
+                font: normal bold 3em black;
+                margin-top: 30px;
+            }
+
             .container {
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
-                
+                margin: 80px 10% 0px 10%;
             }
             
-
-            h3 {
-                text-align: center;
-                font-size: 60px;
-            }
 
             .app {
                 display:flex;
@@ -79,6 +84,12 @@ export default function AppBarber(){
             }
             .app > img {
                 margin: auto;
+                margin-bottom: 30px;
+            }
+            .app > p {
+                font: normal normal 1.5em black;
+                text-indent: 20px;
+                line-height: 1.5em;
             }
 
             img {
@@ -89,8 +100,12 @@ export default function AppBarber(){
             .cell-phone {
                 display: flex;
                 flex-flow: column nowrap;
+                width: 200px;
+                margin: auto;
+                margin-top: 30px
+                align-items: stretch;
             }
-            .link-app {width: 300px; height: 90px;}
+            .link-app {width: 200px; height: 60px;}
         `}</style>
         </>
         
