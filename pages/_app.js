@@ -11,6 +11,7 @@ function GlobalStyle(){
     }
     
     a {color: inherit;}
+    
     `}</style>
     )
 }

@@ -31,7 +31,7 @@ function Logo (){
     <>
         <header>
             <img src="./logo.jpg" alt='logo'/>
-            <p>💈Uma barbearia moderna,<br/> com aquela pegada clássica 💈</p>
+            <p>Uma barbearia moderna,<br/> com aquela pegada clássica</p>
         </header>
         <style jsx>{`
             img {

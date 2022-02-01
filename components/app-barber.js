@@ -1,7 +1,7 @@
 export default function AppBarber(){
     return (
         <>
-        <h2>Agende pelo nosso app</h2>
+        <h2>💈 Agende pelo nosso app 💈</h2>
         <div className="container">
         
             <div className="app">
