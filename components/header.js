@@ -8,8 +8,9 @@ export default function Header(){
         <style jsx>{`
             header {
                 height: 100vh;
-                background: url('/img/home/header2.jpg');
+                background: url('/img/home/header2.jpg') center top;
                 background-size: cover;
+                background-attachment: fixed;
             }
         `}</style>
 

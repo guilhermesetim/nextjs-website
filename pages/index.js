@@ -1,8 +1,8 @@
-import Menu from '../components/menu';
-import Services from '../components/services'
-import Header from  '../components/header'
-
-
+import Services from '../components/services';
+import Header from  '../components/header';
+import AppBarber from '../components/app-barber';
+import BasicSpeedDial from '../components/acess-fast';
+import Footer from '../components/footer';
 
 
 
@@ -11,10 +11,14 @@ export default function HomePage() {
 
     return (
         <>
-           
-            <Menu/>
+            <BasicSpeedDial/>
+            <Logo/>
             <Header/>
+            <AppBarber/>
             <Services/>
+            <Footer/>
+            
+           
             
             
         </>
@@ -22,3 +26,16 @@ export default function HomePage() {
 
 }
   
+function Logo (){
+    return(
+    <>
+        <img src="./logo.jpg" alt='logo'/>
+        <style jsx>{`
+            img {
+                position: absolute;
+                border-radius: 50%;
+            }
+        `}</style>
+    </>
+    )
+}

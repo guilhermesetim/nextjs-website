@@ -3,6 +3,7 @@ export default function Services(){
     return (
         
         < >
+            <h3>Nossos Serviços</h3>
             <div className="main">
                 <div>
                     <h3>Corte</h3>
