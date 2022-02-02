@@ -1,4 +1,16 @@
+import { Children } from "react"
+
 export default function AppBarber(){
+
+    const func = [
+        {day: 'Segunda', hour: '09:30 às 19:00'},
+        {day: 'Terça', hour: '09:30 às 19:00'},
+        {day: 'Quarta', hour: '09:30 às 19:00'},
+        {day: 'Quinta', hour: '09:30 às 19:00'},
+        {day: 'Sexta', hour: '09:30 às 19:00'},
+        {day: 'Sábado', hour: '09:30 às 19:00'}
+    ]
+
     return (
         <>
         <h2>💈 Agende pelo nosso app 💈</h2>
@@ -21,7 +33,6 @@ export default function AppBarber(){
 
 
             <div className="hour-func">
-                <table>
                     <thead>
                         <tr>
                             <td>Dia</td>
@@ -29,32 +40,18 @@ export default function AppBarber(){
                         </tr>
                     </thead>
                     <tbody>
+                        {func.map((each) => (
                         <tr>
-                            <td>Segunda</td>
-                            <td>09 a 18</td>
+                            <td>{each.day}</td>
+                            <td>{each.hour}</td>
                         </tr>
-                        <tr>
-                            <td>Segunda</td>
-                            <td>09 a 18</td>
-                        </tr>
-                        <tr>
-                            <td>Segunda</td>
-                            <td>09 a 18</td>
-                        </tr>
-                        <tr>
-                            <td>Segunda</td>
-                            <td>09 a 18</td>
-                        </tr>
-                        <tr>
-                            <td>Segunda</td>
-                            <td>09 a 18</td>
-                        </tr>
-                        <tr>
-                            <td>Segunda</td>
-                            <td>09 a 18</td>
-                        </tr>
+                        )
+                        
+                        )}
+
+                        
                     </tbody>
-                </table>
+                
             </div>
         </div>
         
@@ -111,4 +108,3 @@ export default function AppBarber(){
         
     )
 }
-

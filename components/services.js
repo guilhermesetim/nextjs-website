@@ -1,26 +1,29 @@
 export default function Services(){
     const price={cut: 35, barber: 30, cutbarber: 60}
+
+    const serv = [
+        {type: 'Corte', address: 'img/services/hair.jpg', price: 35},
+        {type: 'Barba', address: 'img/services/barber.jpg', price: 30},
+        {type: 'Corte & Barba', address: 'img/services/hair-and-barber.jpg', price: 60},
+        
+    ]
+
+
     return (
         
         < >
             <section className="container">
                 <h2>Nossos Serviços</h2>
                 <div className="main">
-                    <div>
-                        <h3>Corte</h3>
-                        <img src="img/services/hair.jpg" />
-                        <p>{price.cut.toLocaleString('pt-br', {style:'currency',currency:'BRL'})}</p>
+
+                    {serv.map((i)=>(
+                        <div>
+                            <h3>{i.type}</h3>
+                            <img src={i.address} />
+                            <p>{i.price.toLocaleString('pt-br', {style:'currency',currency:'BRL'})}</p>
                     </div>
-                    <div>
-                        <h3>Barba</h3>
-                        <img src="img/services/barber.jpg" />
-                        <p>{price.barber.toLocaleString('pt-br', {style:'currency',currency:'BRL'})}</p>
-                    </div>
-                    <div>
-                        <h3>Corte & Barba</h3>
-                        <img src="img/services/hair-and-barber.jpg" />
-                        <p>{price.cutbarber.toLocaleString('pt-br', {style:'currency',currency:'BRL'})}</p>
-                    </div>
+                    ))}
+                    
                 </div>
             </section>
 
@@ -79,3 +82,4 @@ export default function Services(){
     )
     
 }
+
