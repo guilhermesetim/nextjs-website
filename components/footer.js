@@ -3,6 +3,7 @@ import PixIcon from '@mui/icons-material/Pix';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 
+
 export default function Footer(){
     return (
         <>
@@ -14,7 +15,8 @@ export default function Footer(){
 
 
                 <div>
-                    <h3>Mapa</h3>
+                    
+                    
                 </div>
 
 

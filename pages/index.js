@@ -1,9 +1,8 @@
 import Services from '../components/services';
 import Start from  '../components/header';
 import AppBarber from '../components/app-barber';
-import BasicSpeedDial from '../components/acess-fast';
 import Footer from '../components/footer';
-
+import ButtonAcess from '../components/button-acess';
 
 
     
@@ -11,13 +10,13 @@ export default function HomePage() {
 
     return (
         <>
-            <BasicSpeedDial/>
+            
             <Logo/>
             <Start/>
             <AppBarber/>
             <Services/>
             <Footer/>
-            
+            <ButtonAcess/>
            
             
             
@@ -39,13 +38,14 @@ function Logo (){
                 border-radius: 50%;
                 top: 2%;
                 left: 2%;
+                border: 2px solid white;
             }
             p {
                 position: absolute;
-                top: 2%;
-                right: 2%;
+                top: 5%;
+                right: 5%;
                 color: white;
-                font: normal bold 1.2em white;
+                font: normal bold 1.5em white;
             }
         `}</style>
     </>

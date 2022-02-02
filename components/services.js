@@ -17,7 +17,7 @@ export default function Services(){
                 <div className="main">
 
                     {serv.map((i)=>(
-                        <div>
+                        <div key={i.type}>
                             <h3>{i.type}</h3>
                             <img src={i.address} />
                             <p>{i.price.toLocaleString('pt-br', {style:'currency',currency:'BRL'})}</p>

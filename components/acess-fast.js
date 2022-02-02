@@ -8,8 +8,12 @@ import SaveIcon from '@mui/icons-material/Save';
 import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
 
+import Link from '@mui/material/Link';
+
+const withLink = (to, children) => <Link target='_black' to={to}>{children}</Link>;
+
 const actions = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
+  { icon: withLink("https://www.google.com.br/" , <FileCopyIcon />), name: 'Copy' },
   { icon: <SaveIcon />, name: 'Save' },
   { icon: <PrintIcon />, name: 'Print' },
   { icon: <ShareIcon />, name: 'Share' },
@@ -35,4 +39,8 @@ export default function BasicSpeedDial() {
       </SpeedDial>
     </Box>
   );
+}
+
+function test(){
+  console.log('foi')
 }
