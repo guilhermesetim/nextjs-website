@@ -1,4 +1,3 @@
-import { Children } from "react"
 
 export default function AppBarber(){
 
@@ -13,13 +12,13 @@ export default function AppBarber(){
 
     return (
         <>
-        <h2>💈 Agende pelo nosso app 💈</h2>
+        <h2>Agende pelo nosso app</h2>
         <div className="container">
         
             <div className="app">
-                <img src="./img/home/app-barber.png"/>
+                <img src="img/app-barber.png"/>
                 <p>Preparamos uma maneira muito prática para marcar o seu horário, baixe o aplicativo AppBarber em seu celular e cadastre-se na nossa barbearia.</p>
-                <p>Disponível para Android e iOS. Clique em seu sistema correspondente para instalar.</p>
+                
                 
             </div>
 
@@ -27,8 +26,8 @@ export default function AppBarber(){
             
             
             <div className="cell-phone">
-                <a href="#"><img className="link-app" src="img/home/google-play.png"/></a>
-                <a href="#"><img className="link-app" src="img/home/app-store.png"/></a>
+                <a href="#"><img src="img/google-play.png"/></a>
+                <a href="#"><img src="img/app-store.png"/></a>
             </div>
 
 
@@ -59,7 +58,7 @@ export default function AppBarber(){
 
             h2 {
                 text-align: center;
-                font: normal bold 3em black;
+                font: normal bold 3em 'Vollkorn', serif;
                 margin-top: 30px;
             }
 
@@ -84,15 +83,11 @@ export default function AppBarber(){
                 margin-bottom: 30px;
             }
             .app > p {
-                font: normal normal 1.5em black;
+                font: normal normal 1.6em/1.5em 'Vollkorn', serif;
                 text-indent: 20px;
-                line-height: 1.5em;
             }
 
-            img {
-                width: 100px;
-                height: 100px;
-            }
+            
 
             .cell-phone {
                 display: flex;
@@ -101,8 +96,8 @@ export default function AppBarber(){
                 margin: auto;
                 margin-top: 30px
                 align-items: stretch;
+                gap: 30px;
             }
-            .link-app {width: 200px; height: 60px;}
         `}</style>
         </>
         
