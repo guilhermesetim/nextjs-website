@@ -14,14 +14,23 @@ function showBox(valueBool){
 
 
 export default function ButtonAcess(){
+    
+    const infoLinks = [
+        {address: 'https://google.com.br', icon: <DirectionsIcon fontSize='40'/>},
+        {address: 'https://facebook.com', icon: <WhatsAppIcon fontSize='40'/>},
+        {address: 'https://youtube.com.br', icon: <EventAvailableIcon fontSize='40'/>}
+    ]
+
     const [visibility, setVisibility] = useState(!false)
 
     return (
         <>
             <div id='list-links'>
-                <div className='item'><a className='icon' target={'_blanck'} href='https://google.com.br'>< DirectionsIcon fontSize='40'/></a></div>
-                <div className='item'><a className='icon' target={'_blanck'} href='https://facebook.com'><WhatsAppIcon fontSize='40'/></a></div>
-                <div className='item'><a className='icon' target={'_blanck'} href='https://youtube.com.br'><EventAvailableIcon fontSize='40'/></a></div>
+                {infoLinks.map(  (link)=> (
+                     <div className='item'>
+                        <a className='icon' target={'_blanck'} href={link.address}> {link.icon} </a>
+                    </div>
+                ))}
             </div>
         
             <div className="botton-box"
