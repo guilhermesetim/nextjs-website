@@ -5,17 +5,27 @@ import DirectionsIcon from '@mui/icons-material/Directions';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 
+function showBox(valueBool){
+    var result;
+    valueBool === true ? result = "flex" : result = "none";
+    return (document.getElementById("list-links").style.display = `${result}`)
+}
 
 
 
 export default function ButtonAcess(){
+    const [visibility, setVisibility] = useState(!false)
 
     return (
         <>
-            <div id='list-links'></div>
+            <div id='list-links'>
+                <div className='item'><a className='icon' target={'_blanck'} href='https://google.com.br'>< DirectionsIcon fontSize='40'/></a></div>
+                <div className='item'><a className='icon' target={'_blanck'} href='https://facebook.com'><WhatsAppIcon fontSize='40'/></a></div>
+                <div className='item'><a className='icon' target={'_blanck'} href='https://youtube.com.br'><EventAvailableIcon fontSize='40'/></a></div>
+            </div>
         
             <div className="botton-box"
-                onClick={()=>{ links()}} 
+                onClick={()=>{ setVisibility(!visibility) , showBox(visibility) }} 
             >
             
 
@@ -33,62 +43,39 @@ export default function ButtonAcess(){
                 }
                 #list-links {
                     position: fixed;
+                    display: none;
+                    flex-flow: column nowrap;
                     bottom: 20%;
-                    right: 2%;
-                    width: 50px;
+                    right: 3.5%;
+                    width: auto;
                     height: auto;
-                    background-color: green;
+                    z-index: 100;
                 }
+                .item {
+                    position: relative;
+                    height: 50px;
+                    width: 50px;
+                    background-color: gray;
+                    border-radius: 50%;
+                    margin-top: 20px;
+                }
+    
+                .icon {
+                    position: absolute;
+                    font-size: 40px;
+                    height: 60px;
+                    width: 60px;
+                    text-align: center;
+                    transform: translate(-8%, 8%);
+                }
+
             `}</style>
         </>
 
     )
 }
 
-function links(){
     
 
-    const listLinks = 
-    <>
-        <div id='list-links'>
-            <div className='item'><a className='icon' target={'_blanck'} href='https://google.com.br'>< DirectionsIcon fontSize='40'/></a></div>
-            <div className='item'><a className='icon' target={'_blanck'} href='https://facebook.com'><WhatsAppIcon fontSize='40'/></a></div>
-            <div className='item'><a className='icon' target={'_blanck'} href='https://youtube.com.br'><EventAvailableIcon fontSize='40'/></a></div>
-        </div>
-        <style jsx>{`
-            #list-links {
-                position: fixed;
-                display: flex;
-                flex-flow: column nowrap;
-                bottom: 20%;
-                width: auto;
-                height: auto;
-                z-index: 100;
-            }
-
-            .item {
-                position: relative;
-                height: 50px;
-                width: 50px;
-                background-color: gray;
-                border-radius: 50%;
-                margin-top: 20px;
-            }
-
-            .icon {
-                position: absolute;
-                font-size: 40px;
-                height: 60px;
-                width: 60px;
-                text-align: center;
-                transform: translate(-8%, 8%);
-            }
-
-        `}</style>
-    </>
-    return (
-        ReactDOM.render(listLinks, document.getElementById('list-links'))
-    )
     
-}
 
