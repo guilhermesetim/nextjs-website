@@ -2,7 +2,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import PixIcon from '@mui/icons-material/Pix';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-import MyComponent from './maps'
+import MapContainer from './maps'
 
 
 export default function Footer(){
@@ -17,7 +17,8 @@ export default function Footer(){
 
 
                 <div className='map'>
-                    <MyComponent/>
+                <img src="http://maps.googleapis.com/maps/api/staticmap?center=-22.912869, -43.228963
+&zoom=11&size=250x250"></img>
                     
                 </div>
 

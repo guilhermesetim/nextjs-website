@@ -32,19 +32,4 @@ export default function MyApp({ Component, pageProps }) {
     )
   }
 
-function Title(props){
-    const Tag = props.tag || 'h1';
-    return (
-        <>
-            <Tag>{props.children}</Tag>
-            <style jsx>{`
-
-            ${Tag}{
-                font: normal bold 3em Ubuntu, sans-serif;
-                color: red;
-            }
-
-            `}</style>
-        </>
-    )
-}
+  

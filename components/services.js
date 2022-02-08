@@ -62,10 +62,12 @@ export default function Services(){
                 h3 {
                     font:  normal 400 2.5em 'Vollkorn', serif;
                     text-align: center;
+                    color: #212121;
                 }
                 p {
                     font: italic 500 4em 'Vollkorn', serif;
                     text-align: center;
+                    color: #212121;
                 }
 
                 img{
@@ -82,4 +84,5 @@ export default function Services(){
     )
     
 }
+
 
