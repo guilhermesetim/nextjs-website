@@ -4,24 +4,29 @@ export default function Start(){
     <>
         <header>
             <div>
-                <img src="img/logo.jpg" alt='logo'/>
-                <p>Uma barbearia moderna,<br/> com aquela pegada clássica</p>
+                
+                <p>Uma barbearia moderna,<br/> com o formato clássico</p>
             </div>
         </header>
         <style jsx>{`
             header {
                 height: 100vh;
-                background: url('/img/header2.jpg') center top;
+                background:  #a0882b url('/img/header.jpg') center top;
                 background-size: cover;
                 background-attachment: fixed;
             }
-            img {
+            .imagem {
                 position: absolute;
                 border-radius: 50%;
                 top: 5%;
                 left: 5%;
-                box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.521);
+                box-shadow: 0px 0px 3px rgb(0, 0, 0);
+                height: 150px;
+                width: 150px;
+                border: solid 2px rgba(255, 255, 255, 0.322);
             }
+            
+            
             p {
                 position: absolute;
                 top: 10%;

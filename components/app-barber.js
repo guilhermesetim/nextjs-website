@@ -17,7 +17,7 @@ export default function AppBarber(){
         
             <div className="app">
                 <img src="img/app-barber.png"/>
-                <p>Preparamos uma maneira muito prática para marcar o seu horário, baixe o aplicativo AppBarber em seu celular e cadastre-se na nossa barbearia.</p>
+                <p>Preparamos uma maneira muito prática para marcar o seu horário, baixe o aplicativo <strong>AppBarber</strong> em seu celular e cadastre-se na nossa barbearia.</p>
                 <div className="cell-phone">
                     <a href="#"><img src="img/google-play.png"/></a>
                     <a href="#"><img src="img/app-store.png"/></a>
@@ -51,6 +51,10 @@ export default function AppBarber(){
                 font: normal bold 3em 'Vollkorn', serif;
                 margin-top: 30px;
                 color: #212121;
+            }
+            strong {
+                color: #a0882b;
+                text-shadow: 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.911);
             }
             .container {
                 display: flex;
@@ -101,7 +105,7 @@ export default function AppBarber(){
                 border: 1px solid #212121;
                 padding: 15px;
             }
-            tr:nth-child(even) {background-color: #f0f0f0}
+            tr:nth-child(even) {background-color: #ffe0661f}
         `}</style>
         </>
         

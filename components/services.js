@@ -39,7 +39,7 @@ export default function Services(){
 
                 h2 {
                     text-align: center;
-                    font: normal 800 3em 'Vollkorn', serif;
+                    font: normal 800 2.5em 'Vollkorn', serif;
                     color: white;
                 }
 

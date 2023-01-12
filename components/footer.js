@@ -2,7 +2,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import PixIcon from '@mui/icons-material/Pix';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-import MapContainer from './maps'
 
 
 export default function Footer(){
@@ -11,17 +10,12 @@ export default function Footer(){
             <section>
                 <div className='social-media'>
                     <h4>Siga no instagram</h4>
-                    <a href="https://www.instagram.com/barbeariafernandes58/"><InstagramIcon fontSize=''/></a>
-                    <p>@barbeariafernandes58</p>
+                    <a href="https://www.instagram.com/"><InstagramIcon fontSize=''/></a>
+                    <p>@xxxxxxxxxxxxxxxx</p>
                 </div>
-
-
-                <div className='map'>
-                <img src="http://maps.googleapis.com/maps/api/staticmap?center=-22.912869, -43.228963
-&zoom=11&size=250x250"></img>
-                    
+                <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31798508.19070108!2d-73.14434231022466!3d-13.371787985088494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1673481962956!5m2!1spt-BR!2sbr" width="300" height="225"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
 
                 <div className='payment'>
                     <h4>Formas de pagamento</h4>
